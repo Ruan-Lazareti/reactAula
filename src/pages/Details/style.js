@@ -1,5 +1,25 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  //background: red;
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 10.5rem auto;
+
+  grid-template-areas:
+  "header"
+  "content";
+`
+
+export const Links = styled.ul`
+  list-style: none;
+
+  > li {
+    margin-top: 12px;
+  }
+
+  a {
+    color: ${({ theme }) => theme.COLORS.WHITE};
+  }
 `
